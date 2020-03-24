@@ -48,7 +48,7 @@ class Aplicacion():
         #Final del frame
         self.root.mainloop()
     def validarClave(self):
-        self.patron = "^[A-Z][0-9][0-9][0-9][a-z][a-z][a-z][-*/+#$%&]$"
+        self.patron = "^[A-Z][0-9][0-9][0-9][a-z][a-z][a-z][!@#$%^&*(),.¿¡?:{}|<>]$"
         respuesta = bool(re.search(self.patron, self.txt2.get()))
         if(respuesta):
             messagebox.showinfo("Validacion", "Contraseña correcta")
