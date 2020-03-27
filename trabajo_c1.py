@@ -1,7 +1,7 @@
 import re
 class validarPass():
     def __init__(self):
-        print("Validar contraseña...\n")
+        print("Validar contraseña...(No admite comillas)\n")
     def validar(self):
         self.passw = str(input("Ingrese la contraseña: "))
         self.patron = r"^[A-Z][0-9][0-9][0-9][a-z][a-z][a-z](?:[!@#$%^&*(),.¿¡?:{}|<>]{3})$"
